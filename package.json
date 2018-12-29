@@ -1,0 +1,19 @@
+{
+  "name": "p5_electron",
+  "version": "0.0.1",
+  "description": "Electron with P5.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "debug": "electron . --debug",
+    "package:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=dist",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=dist",
+    "package:linux": "electron-packager . --overwrite --platform=linux --arch=x64 --out=dist"
+  },
+  "author": "arasan01",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "4.0.0",
+    "electron-packager": "13.0.1"
+  }
+}
